@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pvtedof"
+version = "1.0.0"
+description = "Pyramid Vision Transformer based extended depth of focus for optimally focused microscopic imaging"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Ramazan Ozgur Dogan", email = "dogan@trabzon.edu.tr" },
+    { name = "Hulya Dogan" },
+    { name = "Alper Yilmaz" },
+    { name = "Sena F. Sezen" },
+]
+keywords = [
+    "extended depth of focus",
+    "depth of focus",
+    "pyramid vision transformer",
+    "microscopy",
+    "image fusion",
+    "focus measure",
+    "shape from focus",
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Image Processing",
+]
+dependencies = [
+    "torch>=2.0",
+    "torchvision>=0.15",
+    "numpy>=1.24",
+    "Pillow>=9.0",
+    "tqdm>=4.60",
+    "einops>=0.6",
+    "timm>=0.9",
+]
+
+[project.urls]
+Repository = "https://github.com/doganr/pvt-edof"
+
+[tool.setuptools.packages.find]
+include = ["pvtedof*"]
+namespaces = false      # otherwise a stale __pycache__/ is discovered as a package
+
+[tool.setuptools.package-data]
+"pvtedof.third_party" = ["LICENSE.third_party"]

@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+title: >-
+  PVT-EDOF: An effective pyramid vision transformer-based extended depth of
+  focus technique for optimally focused microscopic imaging
+message: >-
+  If you use this software, please cite the accompanying journal article.
+type: software
+authors:
+  - given-names: Ramazan Ozgur
+    family-names: Dogan
+    email: dogan@trabzon.edu.tr
+    affiliation: >-
+      Department of Artificial Intelligence Engineering, Faculty of Computer
+      and Information Sciences, Trabzon University, Trabzon, Turkiye
+  - given-names: Hulya
+    family-names: Dogan
+    affiliation: >-
+      Department of Software Engineering, Faculty of Engineering, Karadeniz
+      Technical University, Trabzon, Turkiye
+  - given-names: Alper
+    family-names: Yilmaz
+    affiliation: >-
+      Photogrammetric Computer Vision Laboratory, The Ohio State University,
+      Columbus, USA
+  - given-names: Sena F.
+    family-names: Sezen
+    affiliation: >-
+      Department of Pharmacology, Faculty of Pharmacy, Karadeniz Technical
+      University, Trabzon, Turkiye
+repository-code: https://github.com/doganr/pvt-edof
+license: MIT
+version: 1.0.0
+date-released: 2026-08-13
+preferred-citation:
+  type: article
+  title: >-
+    An effective pyramid vision transformer-based extended depth of focus
+    technique for optimally focused microscopic imaging
+  authors:
+    - given-names: Ramazan Ozgur
+      family-names: Dogan
+    - given-names: Hulya
+      family-names: Dogan
+    - given-names: Alper
+      family-names: Yilmaz
+    - given-names: Sena F.
+      family-names: Sezen
+  journal: The Journal of Supercomputing
+  publisher:
+    name: Springer Science and Business Media LLC
+  issn: 1573-0484
+  year: 2026
+  month: 8
+  volume: 82
+  issue: 12
+  number: "634"
+  doi: 10.1007/s11227-026-08761-6
+  url: https://doi.org/10.1007/s11227-026-08761-6

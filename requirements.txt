@@ -1,0 +1,14 @@
+# Install PyTorch first from https://pytorch.org for a build matching your CUDA
+# version, then run: pip install -r requirements.txt
+
+torch>=2.0
+torchvision>=0.15   # transforms and DataLoader, used by the training loop only
+numpy>=1.24
+Pillow>=9.0
+tqdm>=4.60          # training progress bar
+einops>=0.6
+timm>=0.9           # only for to_2tuple, trunc_normal_ and DropPath
+
+# Not listed on purpose: pytorch-msssim. The MS-SSIM used by the training loss
+# is vendored at pvtedof/third_party/ms_ssim.py; the PyPI package of a similar
+# name exposes a different API and would shadow it.

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# Everything the code writes: fused images, focus maps and loss curves.
+results/
+
+# Model weights. Training creates checkpoints/ on demand, and release/ is where
+# the files that go up as GitHub release assets are staged. Weights are
+# distributed through releases, never through git: a binary committed once
+# stays in the history forever.
+checkpoints/
+release/
+*.pt
+*.pth
+*.model
+
+# Image data. Only the small synthetic demo stack is tracked. The real
+# microscopic series are not publicly released - see the README - so keep
+# them out of the repository.
+data/*
+!data/synthetic_demo/
+data/synthetic_demo/*
+!data/synthetic_demo/*.jpg
+
+# Editor and OS clutter
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

@@ -1,0 +1,14 @@
+* text=auto eol=lf
+
+*.py    text diff=python
+*.md    text
+*.txt   text
+*.cff   text
+*.toml  text
+
+*.pt    binary
+*.model binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.npy   binary
